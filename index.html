@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CryoOne — вопросы к роликам</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Татьяна, вопросы к 30 роликам: кому, куда, о чём и что можно говорить. 15–20 минут, ответы уходят Владимиру в Телеграм.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="CryoOne — вопросы к роликам">
+<meta property="og:description" content="Татьяна, 15–20 минут: кому ролики, о чём, что можно говорить. Ответы уйдут в Телеграм.">
+<meta property="og:url" content="https://t2754445-debug.github.io/cryoone-voprosy/">
+<meta property="og:image" content="https://t2754445-debug.github.io/cryoone-voprosy/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="CryoOne — вопросы к роликам">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--night:#0D1220;--deep:#1B2540;--deep2:#232f50;--gold:#E3B961;--gold2:#c99d45;--paper:#E8E6E1;--dim:#9aa0b0;--line:#2c3860}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--night);color:var(--paper);font:16px/1.55 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+main{max-width:760px;margin:0 auto;padding:0 16px 140px}
+h1,h2,h3{font-family:Onest,Inter,sans-serif;letter-spacing:-.01em}
+.hero{padding:42px 0 26px;display:flex;gap:22px;align-items:center}
+.hero img{width:92px;height:92px;flex:none}
+.hero .brand{font:500 13px/1 Inter;letter-spacing:.32em;color:var(--gold);margin-bottom:10px}
+.hero h1{margin:0;font-weight:300;font-size:34px;line-height:1.12}
+.hero h1 b{font-weight:700}
+.intro{background:var(--deep);border-radius:14px;padding:18px 20px;border-left:4px solid var(--gold)}
+.intro p{margin:0 0 10px}.intro p:last-child{margin:0}
+.nav{position:sticky;top:0;z-index:5;background:rgba(13,18,32,.94);backdrop-filter:blur(8px);margin:22px -16px 0;padding:10px 16px;border-bottom:1px solid var(--line)}
+.nav .row{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none}
+.nav .row::-webkit-scrollbar{display:none}
+.nav a{flex:none;color:var(--dim);text-decoration:none;font-size:13.5px;padding:5px 11px;border-radius:20px;border:1px solid var(--line);white-space:nowrap}
+.nav a.full{color:var(--night);background:var(--gold);border-color:var(--gold)}
+.prog{height:3px;background:var(--line);border-radius:3px;margin-top:9px;overflow:hidden}
+.prog i{display:block;height:100%;width:0;background:var(--gold);transition:width .3s}
+.block{padding-top:34px;scroll-margin-top:70px}
+.block h2{font-weight:300;font-size:28px;margin:0 0 4px;display:flex;align-items:baseline;gap:12px}
+.block h2 .num{font:600 14px Inter;color:var(--gold)}
+.block h2 b{font-weight:700}
+.block .sub{color:var(--dim);margin:0 0 14px;font-size:15px}
+.q{background:var(--deep);border-radius:14px;padding:16px 18px;margin:12px 0;border:1px solid transparent;transition:border-color .2s}
+.q.done{border-color:rgba(227,185,97,.35)}
+.q h3{margin:0;font-size:18px;font-weight:600;line-height:1.3;display:flex;gap:10px}
+.q h3 .tick{flex:none;width:20px;height:20px;border-radius:50%;border:1.5px solid var(--line);margin-top:2px;display:grid;place-items:center;font-size:12px;color:var(--night)}
+.q.done h3 .tick{background:var(--gold);border-color:var(--gold)}
+.q .why{color:var(--dim);font-size:14.5px;margin:6px 0 0 30px}
+.q .body{margin:12px 0 0 30px}
+.dm{background:var(--deep2);border-radius:10px;padding:10px 14px;margin:10px 0 0 30px;font-size:15px}
+.dm .who{font:600 12px Inter;letter-spacing:.12em;color:var(--gold);text-transform:uppercase;display:block;margin-bottom:3px}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opt{font:inherit;font-size:15px;color:var(--paper);background:transparent;border:1.5px solid var(--line);border-radius:22px;padding:7px 14px;cursor:pointer;text-align:left;line-height:1.3;transition:.15s}
+.opt:hover{border-color:var(--gold2)}
+.opt.on{background:var(--gold);border-color:var(--gold);color:var(--night);font-weight:600}
+.opt .rec{display:inline-block;font:600 10.5px Inter;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold);border-radius:10px;padding:1px 6px;margin-left:7px;vertical-align:1px}
+.opt.on .rec{color:var(--night);border-color:var(--night)}
+.hint{font-size:14px;color:var(--gold);margin-top:8px;display:none}
+.hint.show{display:block}
+textarea,input[type=text]{width:100%;font:inherit;font-size:15px;color:var(--paper);background:var(--night);border:1.5px solid var(--line);border-radius:10px;padding:10px 12px;margin-top:10px;resize:vertical}
+textarea:focus,input[type=text]:focus{outline:none;border-color:var(--gold)}
+textarea::placeholder,input::placeholder{color:#5f6780}
+.grid{display:grid;gap:8px}
+.grow{display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:8px 0;border-top:1px solid var(--line)}
+.grow:first-child{border-top:0}
+.grow .lab{flex:1 1 240px;font-size:15px}
+.grow .opts{flex:none}
+.grow .opt{padding:5px 11px;font-size:14px}
+.grp{font:600 12px Inter;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin:14px 0 2px}
+.grp:first-child{margin-top:0}
+.send{margin-top:40px;background:var(--deep);border-radius:16px;padding:22px 20px;text-align:center;border:1px solid var(--gold)}
+.send h2{margin:0 0 6px;font-weight:300;font-size:26px}
+.send h2 b{font-weight:700}
+.send p{color:var(--dim);margin:0 0 16px}
+.btn{font:600 16px Inter;border:0;border-radius:26px;padding:13px 24px;cursor:pointer;margin:5px}
+.btn.main{background:var(--gold);color:var(--night)}
+.btn.ghost{background:transparent;color:var(--paper);border:1.5px solid var(--line)}
+.btn:hover{filter:brightness(1.07)}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(120px);background:var(--gold);color:var(--night);font-weight:600;padding:12px 20px;border-radius:12px;transition:transform .3s;z-index:9;max-width:calc(100% - 32px);text-align:center}
+.toast.show{transform:translateX(-50%) translateY(0)}
+.saved{font-size:13px;color:var(--dim);text-align:center;margin-top:12px}
+footer{color:#5f6780;font-size:13px;text-align:center;margin-top:40px}
+@media(max-width:560px){.hero{padding-top:28px;gap:14px}.hero img{width:64px;height:64px}.hero h1{font-size:26px}
+.q .why,.q .body,.dm{margin-left:0}.block h2{font-size:24px}}
+</style>
+</head>
+<body>
+<main>
+<header class="hero">
+  <img src="logo.png" alt="CryoOne">
+  <div>
+    <div class="brand">CRYOONE · 30 РОЛИКОВ</div>
+    <h1>Вопросы к роликам — <b>до созвона</b></h1>
+  </div>
+</header>
+
+<div class="intro">
+  <p>Татьяна, добрый день. Это Владимир, делаю мульт-ролики.</p>
+  <p>Здесь вопросы, без которых сценарии пишутся вслепую. На часть Дмитрий уже ответил на созвоне — там стоит его ответ, достаточно подтвердить или поправить. Где есть пометка <b style="color:var(--gold)">советую</b> — мой вариант, если сомневаетесь.</p>
+  <p>Займёт минут 15–20. Всё сохраняется само: можно закрыть и вернуться. Не знаете ответа — пропускайте, обсудим на созвоне. В конце кнопка «Отправить» — ответы придут мне в Телеграм.</p>
+</div>
+
+<nav class="nav"><div class="row" id="nav"></div><div class="prog"><i id="prog"></i></div></nav>
+
+<div id="blocks"></div>
+
+<section class="send" id="send">
+  <h2>Готово? <b>Отправляйте</b></h2>
+  <p id="sendinfo">Отвечено 0 из 0. Пропущенное обсудим на созвоне.</p>
+  <button class="btn main" id="btnSend">Отправить в Телеграм</button>
+  <button class="btn ghost" id="btnFile">Скачать файлом</button>
+  <div class="saved">На компьютере ответы копируются, а Телеграм открывается сам — вставьте их в чат (Ctrl+V).</div>
+</section>
+<footer>Ответы хранятся только в этом браузере, пока вы их не отправите.</footer>
+</main>
+<div class="toast" id="toast"></div>
+
+<script>
+/* Типы: one — один вариант, many — несколько, text — поле, ok — подтвердить ответ Дмитрия, grid — таблица «можно/нельзя».
+   r — индексы вариантов «советую», hint — что показать при выборе варианта, other — свой вариант строкой. */
+const B=[
+{t:"Кому",b:"ролики",s:"Зритель решает всё: темы, язык, призыв в конце.",q:[
+ {id:"viewer",k:"ok",t:"Кто зритель роликов",dm:"Те, кто покупает оборудование: салоны, кабинеты, студии.",w:"Дмитрий говорил, что у вас взгляд немного другой. Если так — поправьте."},
+ {id:"buyer",k:"many",t:"Кто чаще всего покупает капсулу?",w:"У каждого свои страхи и свои герои. Отметьте 2–3 главных.",o:["Салон красоты","Спа","Фитнес-клуб, спортзал","Баня, банный комплекс","Медцентр, клиника","Крио-кабинет с нуля","Спорт, реабилитация"],other:1},
+ {id:"decider",k:"one",t:"Кто чаще принимает решение о покупке?",w:"Под того, кто решает, — голос и герой ролика.",o:["Чаще мужчина","Чаще женщина","Поровну"]},
+ {id:"series",k:"one",t:"Сколько из 30 — для клиентов процедуры?",dm:"Дмитрий предложил серию в маркетинговый пакет салонам: как проходит процедура, в чём заходить, сколько длится.",w:"Салон выкладывает эти ролики у себя, рядом с плакатами и скриптами администраторов.",o:["0","5","10","15"],r:[2],hint:{2:"Одна пачка из трёх — остальные 20 остаются покупателю."},other:1},
+ {id:"series_end",k:"many",t:"Что в конце ролика для салона?",w:"Зритель салона должен понять, куда идти.",o:["Логотип CryoOne","Место под адрес и телефон салона","«Запишитесь на процедуру»","Без призыва"],r:[0,1]}
+]},
+{t:"После",b:"ролика",s:"Что человек делает, когда досмотрел.",q:[
+ {id:"action",k:"ok",t:"Что делает человек после ролика",dm:"Пишет — контакты остаются. Звонить не просим, в лоб не продаём, даём пользу."},
+ {id:"reason",k:"many",t:"Какой повод написать даём?",w:"Первые три назвал Дмитрий. В каждом ролике — свой повод под тему.",o:["Расчёт рентабельности под город","Поставщики азота в регионе","План помещения по размерам","Консультация","Приглашение на производство"],r:[0,1,2],other:1},
+ {id:"where",k:"many",t:"Куда пишут?",o:["Личка ВК","Телеграм","MAX","Форма на сайте","Комментарий под роликом"],other:1},
+ {id:"codeword",k:"one",t:"Кодовое слово в комментариях — берём?",w:"В ваших постах 2026 уже есть «РАСЧЁТ», «ПЛАН», «СТАРТ».",o:["Да","Нет","Решим на созвоне"],r:[0],hint:{0:"Человек пишет одно слово — менеджер сразу видит, что ему нужно, а ролик получает комментарии."}},
+ {id:"faq",k:"text",t:"Какие вопросы покупатели задают чаще всего?",w:"Их словами, 5–10 штук. Это готовые темы и первые фразы роликов. Если список пришлют продажники — так и напишите.",ph:"«А азот у нас в городе вообще есть?»\n«Сколько процедур в день, чтобы отбить?»"},
+ {id:"lose",k:"one",t:"Где теряете людей?",o:["Не пишут вообще","Пишут и пропадают после разговора","И то и другое"],hint:{0:"Значит, первым делом ролики на охват — широкие темы.",1:"Значит, нужны ролики, которые менеджер отправляет в переписке, чтобы дожать.",2:"Делаем оба типа — пропорцию обсудим на созвоне."}},
+ {id:"goal",k:"ok",t:"По чему поймём, что ролики сработали",dm:"Присутствие в интернете: больше логотипа, чтобы рынок криокапсул сразу связывали с CryoOne. Продаж от 30 роликов не ждёт."},
+ {id:"metric",k:"many",t:"Что будете смотреть через месяц?",o:["Заявки","Сообщения","Просмотры","Подписчики","Узнают ли на встречах"],other:1}
+]},
+{t:"Где",b:"выйдут",s:"Где главный зритель — там и формат.",q:[
+ {id:"platforms",k:"many",t:"Где будут ролики?",o:["ВК","Дзен","Телеграм","YouTube","Rutube","Одноклассники","MAX","Яндекс Карты","Сайт","Авито","Инстаграм"],other:1},
+ {id:"main_pl",k:"one",t:"Какая площадка главная?",o:["ВК","Дзен","Телеграм","YouTube","Инстаграм","Сайт"],other:1},
+ {id:"insta",k:"ok",t:"Инстаграм",dm:"В Инстаграме без призыва купить: только показываем и рассказываем."},
+ {id:"who_posts",k:"one",t:"Кто выкладывает?",w:"От этого зависит, нужны ли готовые тексты под каждую площадку и график.",o:["Сами","Менеджер","СММщик","Отдаём файлы, дальше не наше"],other:1},
+ {id:"freq",k:"one",t:"Как часто выходят?",o:["Ролик в день","3 в неделю","Пачками","Пока не решили"]},
+ {id:"ads",k:"one",t:"Пойдут ролики в рекламу?",w:"Для рекламы другая первая секунда и нужна маркировка (erid).",o:["Нет","ВК Реклама","Яндекс Директ","Пока не знаем"],other:1},
+ {id:"horiz",k:"many",t:"Нужен горизонтальный формат?",w:"Сейчас всё вертикальное, как в телефоне.",o:["Не нужен","YouTube","Сайт","Экран на выставке"]}
+]},
+{t:"Формат",b:"и герои",s:"Как выглядит и звучит серия.",q:[
+ {id:"pilot",k:"text",t:"Пробный ролик «Как проходит процедура» — что понравилось, что нет?",w:"Дмитрию формат понравился, но в сценарии он нашёл «ряд мелочей, некоторые значительные». Если видели — напишите какие.",ph:"Не видела — тоже ответ"},
+ {id:"len",k:"ok",t:"Длина",dm:"До 90 секунд. Короткой теме — короткий ролик."},
+ {id:"voice",k:"one",t:"Голос Дмитрия",w:"Клон голоса делаем только с согласия Дмитрия.",o:["Нейросеть, как в пробном ролике","Клон голоса Дмитрия","Решит Дмитрий"],r:[1],hint:{1:"Нужны 2 минуты его речи на диктофон. Живой голос — самое доверительное место ролика.",0:"Можно начать так и перейти на клон позже."}},
+ {id:"cast",k:"many",t:"Кто ещё будет в серии постоянно?",dm:"Дмитрий — рассказчик, нарисованный. Его образ перерисуем по фото.",w:"Советую не больше двух: каждого рисуем по карте персонажа, чтобы из ролика в ролик было одно лицо.",o:["Владелица салона — покупательница","Клиентка на процедуре","Монтажник-сборщик","Администратор салона","Сомневающийся предприниматель"],r:[0,2],other:1},
+ {id:"every",k:"many",t:"Что в каждом ролике?",dm:"Логотипа — больше.",o:["Сайт cryoone.ru","Телефон","Кодовое слово","Адрес производства"],other:1},
+ {id:"caption",k:"many",t:"Что в тексте под роликом?",o:["Телефон","Ссылка на сайт","Хэштеги","Кодовое слово","Короткий пересказ ролика"],other:1}
+]},
+{t:"О чём",b:"ролики",s:"Первая пачка — 10 роликов. Отметьте, что нужнее продажникам прямо сейчас.",q:[
+ {id:"topics",k:"grid",t:"Темы: какие в первые 10?",w:"Собрал из созвона с Дмитрием и ваших постов.",cols:["в первые 10","позже","не надо"],
+  rows:[["Покупателю"],"Сколько процедур в день нужно, чтобы отбить капсулу","Азот: где взять и сколько стоит в вашем городе","Помещение: хватит ли вашей комнаты","Биохакинг в студии — модная услуга","Нужен ли медик и лицензия","После покупки: как загрузить капсулу клиентами","Российская капсула против импортной","Открытая капсула — без клаустрофобии","Гарантия и сервис: что, если сломается","Оплата частями","Почему капсулы пылятся в углу","Спа и баня: «наши гости не поймут холод»",
+   ["Клиенту процедуры"],"Как проходит процедура","В чём заходить","Сколько длится и почему именно столько","Что даёт криотерапия"]},
+ {id:"topics_more",k:"text",t:"Какие темы добавить?",ph:"Что спрашивают, что приходится объяснять"},
+ {id:"tired",k:"text",t:"Какой вопрос уже достал — слышите его в сотый раз?",w:"Самая живая тема: на неё отвечают с эмоцией."},
+ {id:"stories",k:"text",t:"Истории клиентов, которые рассказываете всем",w:"Дмитрий сказал, что байки есть у вас и у продажников.",ph:"Кто (салон, кабинет, город), сколько процедур в день, за сколько отбили. Названия можно не писать."},
+ {id:"taboo",k:"many",t:"Про что не говорим?",o:["Конкуренты по именам","Цены","Названия клиентов"],other:1},
+ {id:"best",k:"many",max:2,t:"Чем CryoOne лучше — две главные вещи",w:"Которые говорите на встрече первыми. Выберите две.",o:["Гарантия","Сервис за 1–3 дня","Открытая капсула — без клаустрофобии","Российское производство, запчасти рядом","20 лет в криотехнологиях","Экономику точки считаем до договора","Маркетинг на запуск","Оплата частями"],other:1}
+]},
+{t:"Цифры",b:"и здоровье",s:"В разных местах у вас разные цифры. В ролик идёт одна.",q:[
+ {id:"temp",k:"one",t:"Температура",o:["−180 °C","−190 °C (буклет)","−130…−180 °C (посты)","до −160 °C"],r:[0],hint:{0:"Так сказал Дмитрий 27.09 — сейчас стоит в роликах."},other:1},
+ {id:"dur",k:"one",t:"Длительность процедуры",o:["3 минуты","2–3 минуты"],r:[0],other:1},
+ {id:"warranty",k:"one",t:"Гарантия",o:["24 месяца","12–24 месяца","От 12 месяцев"],other:1},
+ {id:"payback",k:"one",t:"Окупаемость при 5–8 процедурах в день",o:["От 6 месяцев","8–12 месяцев","12–16 месяцев","Не называем"],other:1},
+ {id:"count",k:"one",t:"Сколько капсул поставлено",o:["Более 500","Сотни клиентов","Не называем"],other:1},
+ {id:"price_caps",k:"one",t:"Цена капсулы в ролике",o:["Называем «от 2,35 млн ₽»","Не называем"],other:1},
+ {id:"price_proc",k:"one",t:"Цена процедуры для клиента",o:["Называем «2 500–6 000 ₽»","Не называем"],other:1},
+ {id:"health",k:"grid",t:"Что можно говорить про пользу?",w:"Сейчас не берём похудение, суставы и «лечит» — это медицинские обещания. Дмитрий сказал, что у юристов есть ответ.",cols:["можно","нельзя","уточню"],
+  rows:["Сон лучше","Отёки уходят","Кожа подтягивается","Больше энергии","Восстановление после тренировок быстрее","Похудение","Суставы, боль","«Лечит»"]},
+ {id:"lawyers",k:"text",t:"Что говорят юристы?",w:"Идёт регистрационное удостоверение. Формулировки, которые можно и нельзя, — сюда.",ph:"Можно: «…» / Нельзя: «…»"},
+ {id:"contra",k:"one",t:"Противопоказания и «консультация специалиста»",w:"Сейчас в роликах этой строки нет.",o:["Строкой в каждом ролике","Только в тексте под роликом","Не пишем"],other:1},
+ {id:"contra_list",k:"text",t:"Официальный список противопоказаний, если есть",ph:"Вставьте или напишите, где взять"}
+]},
+{t:"Материалы",b:"",s:"Живое видео в ролике смотрят лучше всего.",q:[
+ {id:"chat",k:"one",t:"Чат с фото и видео",dm:"Дмитрий говорил про чат в Телеграме с фото и видео — оборудование, процедуры, производство.",o:["Добавила @vh220","Пришлю ссылку-приглашение","Пока нельзя"],hint:{1:"Ссылку можно вставить в поле ниже."},other:1},
+ {id:"video",k:"many",t:"Какое видео есть?",o:["Производство и сборка","Монтаж у клиента","Процедуры в салонах","Отзывы клиентов","Подкаст целиком","Выставки"],other:1},
+ {id:"consent",k:"one",t:"Людей из видео можно показывать?",w:"Например, Катю из рилса — она уже стоит в пробном ролике.",o:["Да, всех","Только некоторых","Нет"],hint:{1:"Напишите кого в поле ниже."},other:1},
+ {id:"reviews",k:"one",t:"Есть клиенты, готовые дать отзыв?",w:"Отзыв владельца салона сильнее любой нашей фразы.",o:["Да, голосом","Да, на видео","Спрошу","Нет"]},
+ {id:"photos",k:"one",t:"Фото Дмитрия для его образа",o:["Дмитрий пришлёт сам","Пришлю в чат"]}
+]},
+{t:"Как",b:"работаем",s:"Чтобы сроки не сорвались.",q:[
+ {id:"approve",k:"one",t:"Как удобнее согласовывать сценарии?",o:["Страница со всеми сценариями, как эта","Голосовое","Созвон"],r:[0],hint:{0:"На странице каждая реплика — с правкой рядом, ничего не теряется."}},
+ {id:"days",k:"one",t:"Сколько дней на согласование пачки?",w:"Пачка — 10 сценариев.",o:["1 день","2 дня","3 дня"],other:1},
+ {id:"call",k:"text",t:"Когда удобно созвониться?",ph:"День и время"},
+ {id:"missed",k:"text",t:"Что я не спросил, а это важно?"}
+]}];
+
+const KEY="cryoone_tatiana_v1";
+let S={};try{S=JSON.parse(localStorage.getItem(KEY)||"{}")}catch(e){S={}}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const Q=[];B.forEach((b,bi)=>b.q.forEach(q=>{q.bi=bi;Q.push(q)}));
+
+function optBtn(q,i,label,on){const rec=(q.r||[]).includes(i)?'<span class="rec">советую</span>':'';
+ return `<button type="button" class="opt${on?' on':''}" data-q="${q.id}" data-i="${i}">${esc(label)}${rec}</button>`}
+
+function render(){
+ document.getElementById("blocks").innerHTML=B.map((b,bi)=>`<section class="block" id="b${bi}">
+  <h2><span class="num">${bi+1}/${B.length}</span><span>${b.t} <b>${b.b}</b></span></h2><p class="sub">${b.s}</p>
+  ${b.q.map(qHTML).join("")}</section>`).join("");
+ document.getElementById("nav").innerHTML=B.map((b,bi)=>`<a href="#b${bi}" id="n${bi}">${bi+1}. ${b.t}${b.b?' '+b.b:''}</a>`).join("");
+ refresh();
+}
+function qHTML(q){
+ const v=S[q.id]||{};let body="";
+ if(q.k==="ok"){
+  body=`<div class="opts">${optBtn(q,0,"Да, так",v.c===0)}${optBtn(q,1,"Поправлю",v.c===1)}</div>
+   <textarea data-t="${q.id}" rows="2" placeholder="Как на самом деле" style="display:${v.c===1?'block':'none'}">${esc(v.t||"")}</textarea>`;
+ }else if(q.k==="one"||q.k==="many"){
+  const sel=q.k==="one"?[v.c]:(v.c||[]);
+  body=`<div class="opts">${q.o.map((o,i)=>optBtn(q,i,o,sel.includes(i))).join("")}</div>
+   ${q.hint?`<div class="hint" data-h="${q.id}"></div>`:""}
+   ${q.other?`<input type="text" data-t="${q.id}" placeholder="Свой вариант или уточнение" value="${esc(v.t||"")}">`:""}`;
+ }else if(q.k==="text"){
+  body=`<textarea data-t="${q.id}" rows="3" placeholder="${esc(q.ph||"")}">${esc(v.t||"")}</textarea>`;
+ }else if(q.k==="grid"){
+  const g=v.g||{};
+  body=`<div class="grid">${q.rows.map((r,ri)=>Array.isArray(r)?`<div class="grp">${r[0]}</div>`:
+   `<div class="grow"><span class="lab">${esc(r)}</span><span class="opts">${q.cols.map((c,ci)=>
+   `<button type="button" class="opt${g[ri]===ci?' on':''}" data-q="${q.id}" data-r="${ri}" data-i="${ci}">${c}</button>`).join("")}</span></div>`).join("")}</div>`;
+ }
+ return `<div class="q" id="q_${q.id}"><h3><span class="tick">✓</span><span>${esc(q.t)}</span></h3>
+  ${q.dm?`<div class="dm"><span class="who">${q.k==="ok"?"Дмитрий на созвоне":"Уже известно"}</span>${esc(q.dm)}</div>`:""}
+  ${q.w?`<div class="why">${esc(q.w)}</div>`:""}<div class="body">${body}</div></div>`;
+}
+function answered(q){const v=S[q.id];if(!v)return false;
+ if(q.k==="grid")return v.g&&Object.keys(v.g).length>0;
+ if(q.k==="many")return (v.c&&v.c.length)||(v.t&&v.t.trim());
+ return v.c!==undefined&&v.c!==null||(v.t&&v.t.trim());}
+function refresh(){
+ let n=0;Q.forEach(q=>{const a=!!answered(q);if(a)n++;document.getElementById("q_"+q.id).classList.toggle("done",a);
+  if(q.hint){const el=document.querySelector(`[data-h="${q.id}"]`);const c=(S[q.id]||{}).c;const h=q.hint[c];el.textContent=h||"";el.classList.toggle("show",!!h)}});
+ B.forEach((b,bi)=>document.getElementById("n"+bi).classList.toggle("full",b.q.every(answered)));
+ document.getElementById("prog").style.width=(n/Q.length*100)+"%";
+ document.getElementById("sendinfo").textContent=`Отвечено ${n} из ${Q.length}. Пропущенное обсудим на созвоне.`;
+}
+document.addEventListener("click",e=>{
+ const b=e.target.closest(".opt");if(!b)return;
+ const q=Q.find(x=>x.id===b.dataset.q);const i=+b.dataset.i;const v=S[q.id]=S[q.id]||{};
+ if(q.k==="grid"){v.g=v.g||{};const r=b.dataset.r;if(v.g[r]===i)delete v.g[r];else v.g[r]=i;
+  b.parentNode.querySelectorAll(".opt").forEach(x=>x.classList.toggle("on",v.g[r]===+x.dataset.i));}
+ else if(q.k==="many"){v.c=v.c||[];const k=v.c.indexOf(i);
+  if(k>=0)v.c.splice(k,1);else{if(q.max&&v.c.length>=q.max){toast(`Не больше ${q.max} — снимите один из выбранных`);return}v.c.push(i)}
+  b.classList.toggle("on",v.c.includes(i));}
+ else{v.c=v.c===i?null:i;b.parentNode.querySelectorAll(".opt").forEach(x=>x.classList.toggle("on",v.c===+x.dataset.i));
+  if(q.k==="ok"){const t=document.querySelector(`textarea[data-t="${q.id}"]`);t.style.display=v.c===1?"block":"none";if(v.c===1)t.focus();}}
+ save();refresh();
+});
+document.addEventListener("input",e=>{const id=e.target.dataset.t;if(!id)return;(S[id]=S[id]||{}).t=e.target.value;save();refresh();});
+
+function textOut(){
+ const L=["CryoOne — ответы Татьяны к роликам",""];
+ B.forEach((b,bi)=>{const rows=[];
+  b.q.forEach(q=>{if(!answered(q))return;const v=S[q.id];let a="";
+   if(q.k==="ok")a=v.c===0?"да, так":v.c===1?"поправка: "+(v.t||"").trim():"";
+   else if(q.k==="one")a=[v.c!=null?q.o[v.c]:"",(v.t||"").trim()].filter(Boolean).join(" · ");
+   else if(q.k==="many")a=[(v.c||[]).map(i=>q.o[i]).join(", "),(v.t||"").trim()].filter(Boolean).join(" · ");
+   else if(q.k==="text")a=(v.t||"").trim();
+   else if(q.k==="grid"){const by={};q.rows.forEach((r,ri)=>{if(Array.isArray(r))return;const c=(v.g||{})[ri];if(c!==undefined)(by[q.cols[c]]=by[q.cols[c]]||[]).push(r)});
+    a=q.cols.filter(c=>by[c]).map(c=>`\n   ${c}: ${by[c].join("; ")}`).join("");}
+   if(a)rows.push(`— ${q.t.replace(/[?]$/,"")}: ${a}`);});
+  if(rows.length){L.push(`${bi+1}. ${b.t}${b.b?" "+b.b:""}`.toUpperCase(),...rows,"")}});
+ const n=Q.filter(answered).length;L.push(`Отвечено ${n} из ${Q.length}.`);
+ return L.join("\n");
+}
+function toast(m){const t=document.getElementById("toast");t.textContent=m;t.classList.add("show");clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove("show"),3200)}
+function copy(txt){if(navigator.clipboard&&window.isSecureContext)return navigator.clipboard.writeText(txt);
+ const a=document.createElement("textarea");a.value=txt;document.body.appendChild(a);a.select();document.execCommand("copy");a.remove();return Promise.resolve()}
+document.getElementById("btnSend").onclick=()=>{
+ const txt=textOut();const mobile=/Android|iPhone|iPad/i.test(navigator.userAgent);
+ if(mobile&&navigator.share){navigator.share({title:"Ответы к роликам CryoOne",text:txt}).catch(()=>{});return}
+ copy(txt).then(()=>{toast("Ответы скопированы. Вставьте в чат — Ctrl+V");setTimeout(()=>window.open("https://t.me/vh220","_blank","noopener"),600)});
+};
+document.getElementById("btnFile").onclick=()=>{
+ const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([textOut()],{type:"text/plain;charset=utf-8"}));
+ a.download="CryoOne_ответы_Татьяны.txt";a.click();
+};
+render();
+</script>
+</body>
+</html>
